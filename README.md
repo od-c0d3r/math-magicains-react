@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <div style="float:right;">
 
-<img align="right" src="./doc/app_screenshot.jpeg" style="width:450px;">
+<img align="right" src="./src/logo.svg" style="width:450px;">
 
 </div>
 
@@ -16,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-- Coming soon
+- Served with Github pages : [Live](https://od-c0d3r.github.io/math-magicains-react/build/)
 
 ## App Tree
 
