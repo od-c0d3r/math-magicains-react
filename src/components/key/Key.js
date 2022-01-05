@@ -1,3 +1,4 @@
+/* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './Key.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -8,9 +9,11 @@ class Key extends React.Component {
   }
 
   render() {
+    const { op } = this.props;
+    const { display } = this.props;
     return (
-      <div className={!this.props.op ? 'calKey' : 'calKey opColor'}>
-        {this.props.display}
+      <div className={op ? 'calKey opColor' : 'calKey'}>
+        {display}
       </div>
     );
   }

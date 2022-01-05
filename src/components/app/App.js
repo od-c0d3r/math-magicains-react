@@ -1,4 +1,4 @@
-// import logo from '../../imgs/react.svg';
+/* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './App.scss';
 import React from 'react';
 import Calculator from '../calculator/Calculator';
@@ -10,7 +10,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="App">
+      <div
+        id="App"
+        style={{
+          height: window.innerHeight,
+        }}
+      >
         <Calculator />
       </div>
     );
