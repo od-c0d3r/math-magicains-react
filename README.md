@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <div style="float:right;">
 
+
 <img align="right" src="./public/react.svg" style="width:450px;">
 
 </div>
@@ -23,6 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## App Tree
 
 ```markdown
+.
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
