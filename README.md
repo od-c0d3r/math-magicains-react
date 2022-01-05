@@ -2,11 +2,14 @@
 
 > Milestone 1 : Set up the environment and tools needed to develop a React application
 
+> Milestone 2 : Develop React components that will hold the core functionality: a calculator.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <div style="float:right;">
 
-<img align="right" src="./src/logo.svg" style="width:450px;">
+
+<img align="right" src="./public/react.svg" style="width:450px;">
 
 </div>
 
@@ -16,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-- Served with Github pages : [Live](https://od-c0d3r.github.io/math-magicains-react/build/)
+- Served with Github pages : [Live](https://od-c0d3r.github.io/math-magicains-react/)
 
 ## App Tree
 
@@ -28,17 +31,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 │   ├── logo192.png
 │   ├── logo512.png
 │   ├── manifest.json
+│   ├── react.svg
 │   └── robots.txt
 ├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
-│   ├── index.css
+│   ├── components
+│   │   ├── app
+│   │   │   ├── App.js
+│   │   │   └── App.scss
+│   │   ├── calculator
+│   │   │   ├── Calculator.js
+│   │   │   └── Calculator.scss
+│   │   ├── key
+│   │   │   ├── Key.js
+│   │   │   └── Key.scss
+│   │   ├── keyboard
+│   │   │   ├── Keyboard.js
+│   │   │   └── Keyboard.scss
+│   │   └── screen
+│   │       ├── Screen.js
+│   │       └── Screen.scss
 │   ├── index.js
-│   ├── logo.svg
-│   ├── reportWebVitals.js
-│   └── setupTests.js
+│   └── index.scss
 ├── .babelrc
+├── .env
 ├── .eslintrc.json
 ├── .gitignore
 ├── .stylelintrc.json
