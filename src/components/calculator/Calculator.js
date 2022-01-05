@@ -1,5 +1,7 @@
 import './Calculator.scss';
 import React from 'react';
+import Screen from '../screen/Screen';
+import Keyboard from '../keyboard/Keyboard';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -7,7 +9,12 @@ class Calculator extends React.Component {
   }
 
   render() {
-    return <p>This is the Calculator Class Component</p>;
+    return (
+      <div id="calContainer">
+        <Screen />
+        <Keyboard />
+      </div>
+    );
   }
 }
 

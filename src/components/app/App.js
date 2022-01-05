@@ -9,7 +9,11 @@ class App extends React.Component {
   }
 
   render() {
-    return <Calculator />;
+    return (
+      <div id="App">
+        <Calculator />
+      </div>
+    )
   }
 }
 

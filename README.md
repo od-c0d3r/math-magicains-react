@@ -1,6 +1,8 @@
 # Math Magicians App
 
-> Milestone 1 : set up the environment and tools needed to develop a React application
+> Milestone 1 : Set up the environment and tools needed to develop a React application.
+
+> Milestone 2 : Develop React components that will hold the core functionality: a calculator.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
