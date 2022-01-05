@@ -23,24 +23,35 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## App Tree
 
 ```markdown
-.
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
 │   ├── logo192.png
 │   ├── logo512.png
 │   ├── manifest.json
+│   ├── react.svg
 │   └── robots.txt
 ├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
-│   ├── index.css
+│   ├── components
+│   │   ├── app
+│   │   │   ├── App.js
+│   │   │   └── App.scss
+│   │   ├── calculator
+│   │   │   ├── Calculator.js
+│   │   │   └── Calculator.scss
+│   │   ├── key
+│   │   │   ├── Key.js
+│   │   │   └── Key.scss
+│   │   ├── keyboard
+│   │   │   ├── Keyboard.js
+│   │   │   └── Keyboard.scss
+│   │   └── screen
+│   │       ├── Screen.js
+│   │       └── Screen.scss
 │   ├── index.js
-│   ├── logo.svg
-│   ├── reportWebVitals.js
-│   └── setupTests.js
+│   └── index.scss
 ├── .babelrc
+├── .env
 ├── .eslintrc.json
 ├── .gitignore
 ├── .stylelintrc.json

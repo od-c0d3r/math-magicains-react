@@ -20,7 +20,7 @@ class Key extends React.Component {
 }
 
 Key.propTypes = {
-  op: PropTypes.bool.isRequired,
+  op: PropTypes.string.isRequired,
   display: PropTypes.string.isRequired,
 };
 
