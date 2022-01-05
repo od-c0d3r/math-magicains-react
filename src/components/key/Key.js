@@ -20,8 +20,12 @@ class Key extends React.Component {
 }
 
 Key.propTypes = {
-  op: PropTypes.string.isRequired,
+  op: PropTypes.bool,
   display: PropTypes.string.isRequired,
+};
+
+Key.defaultProps = {
+  op: false,
 };
 
 export default Key;
