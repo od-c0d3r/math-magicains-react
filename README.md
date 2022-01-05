@@ -55,8 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- The [Yu-Gi-Oh API development community](https://db.ygoprodeck.com/api-guide/) for the provision of their amazin free API
-- Microverse Team for facilitating project colaboration
+- Calculator design by [Özge Oldaç](https://dribbble.com/shots/6805175-Daily-UI-004-Calculator/attachments/6805175-Daily-UI-004-Calculator?mode=media)
 
 ## 📝 License
 
