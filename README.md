@@ -52,6 +52,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 │   │   └── screen
 │   │       ├── Screen.js
 │   │       └── Screen.scss
+│   ├── logic
+│   │   ├── calculate.js
+│   │   └── operate.js
 │   ├── index.js
 │   └── index.scss
 ├── .babelrc
