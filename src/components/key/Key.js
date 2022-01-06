@@ -9,23 +9,26 @@ class Key extends React.Component {
     this.handleTextChange = this.handleTextChange.bind(this);
   }
 
-  handleTextChange(e) {
-    this.props.handleTextChange(this.props.display);
+  handleTextChange() {
+    const { display } = this.props;
+    const { handleTextChange } = this.props;
+    handleTextChange(display);
   }
 
   render() {
     const { op } = this.props;
     const { display } = this.props;
     return (
-      <div className={op ? 'calKey opColor' : 'calKey'} onClick={(e)=> this.handleTextChange(e)}>
+      <button type="button" className={op ? 'calKey opColor' : 'calKey'} onClick={this.handleTextChange} onKeyPress={this.handleTextChange}>
         {display}
-      </div>
+      </button>
     );
   }
 }
 
 Key.propTypes = {
   op: PropTypes.bool,
+  handleTextChange: PropTypes.func.isRequired,
   display: PropTypes.string.isRequired,
 };
 
