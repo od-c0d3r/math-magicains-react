@@ -17,9 +17,10 @@ class Calculator extends React.Component {
   }
 
   render() {
+    const { screen } = this.state;
     return (
       <div id="calContainer">
-        <Screen screen={this.state.screen} />
+        <Screen screen={screen} />
         <Keyboard handleTextChange={this.handleTextChange} />
       </div>
     );
