@@ -1,6 +1,7 @@
 /* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './Keyboard.scss';
 import React from 'react';
+import PropTypes from 'prop-types';
 import Key from '../key/Key';
 
 class Keyboard extends React.Component {
@@ -10,7 +11,8 @@ class Keyboard extends React.Component {
   }
 
   handleTextChange(keyName) {
-    this.props.handleTextChange(keyName);
+    const { handleTextChange } = this.props;
+    handleTextChange(keyName);
   }
 
   render() {
@@ -39,5 +41,9 @@ class Keyboard extends React.Component {
     );
   }
 }
+
+Keyboard.propTypes = {
+  handleTextChange: PropTypes.func.isRequired,
+};
 
 export default Keyboard;
