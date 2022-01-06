@@ -3,28 +3,21 @@ import './Key.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Key extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleTextChange = this.handleTextChange.bind(this);
-  }
+const Key = (props) => {
+  const { op } = props;
+  const { display } = props;
+  const { handleTextChange } = props;
 
-  handleTextChange() {
-    const { display } = this.props;
-    const { handleTextChange } = this.props;
+  const leftUpState = () => {
     handleTextChange(display);
-  }
+  };
 
-  render() {
-    const { op } = this.props;
-    const { display } = this.props;
-    return (
-      <button type="button" className={op ? 'calKey opColor' : 'calKey'} onClick={this.handleTextChange} onKeyPress={this.handleTextChange}>
-        {display}
-      </button>
-    );
-  }
-}
+  return (
+    <button type="button" className={op ? 'calKey opColor' : 'calKey'} onClick={leftUpState} onKeyPress={leftUpState}>
+      {display}
+    </button>
+  );
+};
 
 Key.propTypes = {
   op: PropTypes.bool,
