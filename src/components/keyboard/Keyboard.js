@@ -6,10 +6,9 @@ import Key from '../key/Key';
 
 const Keyboard = (props) => {
   const { handleToKeyboard } = props;
-  
   const leftUpToCalculator = (keyName) => {
     handleToKeyboard(keyName);
-  }
+  };
   return (
     <div id="calKeys">
       <Key handleToKey={leftUpToCalculator} display="AC" />
@@ -33,7 +32,7 @@ const Keyboard = (props) => {
       <Key handleToKey={leftUpToCalculator} display="=" op />
     </div>
   );
-}
+};
 
 Keyboard.propTypes = {
   handleToKeyboard: PropTypes.func.isRequired,
