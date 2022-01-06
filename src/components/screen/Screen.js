@@ -10,7 +10,7 @@ class Screen extends React.Component {
   render() {
     return (
       <div id="calScreen">
-        0
+        {this.props.screen}
       </div>
     );
   }
