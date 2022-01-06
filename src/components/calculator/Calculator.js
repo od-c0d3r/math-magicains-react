@@ -3,17 +3,25 @@ import './Calculator.scss';
 import React from 'react';
 import Screen from '../screen/Screen';
 import Keyboard from '../keyboard/Keyboard';
+import calculate from '../../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
+    this.handleTextChange = this.handleTextChange.bind(this);
+    this.state = { screen: '0' };
+  }
+
+  handleTextChange(keyName) {
+    this.setState((state) => calculate(state, keyName));
   }
 
   render() {
+    const { screen } = this.state;
     return (
       <div id="calContainer">
-        <Screen />
-        <Keyboard />
+        <Screen screen={screen} />
+        <Keyboard handleTextChange={this.handleTextChange} />
       </div>
     );
   }

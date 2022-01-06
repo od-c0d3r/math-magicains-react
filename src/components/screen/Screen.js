@@ -1,6 +1,7 @@
 /* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './Screen.scss';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Screen extends React.Component {
   constructor(props) {
@@ -8,12 +9,17 @@ class Screen extends React.Component {
   }
 
   render() {
+    const { screen } = this.props;
     return (
       <div id="calScreen">
-        0
+        {screen}
       </div>
     );
   }
 }
+
+Screen.propTypes = {
+  screen: PropTypes.string.isRequired,
+};
 
 export default Screen;

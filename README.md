@@ -4,6 +4,8 @@
 
 > Milestone 2 : Develop React components that will hold the core functionality: a calculator.
 
+> Milestone 3 : Import and merge the logic needed to make the Calculator components developed in the previous milestone work.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <div style="float:right;">
@@ -50,6 +52,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 │   │   └── screen
 │   │       ├── Screen.js
 │   │       └── Screen.scss
+│   ├── logic
+│   │   ├── calculate.js
+│   │   └── operate.js
 │   ├── index.js
 │   └── index.scss
 ├── .babelrc
