@@ -4,46 +4,39 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Key from '../key/Key';
 
-class Keyboard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleTextChange = this.handleTextChange.bind(this);
+const Keyboard = (props) => {
+  const { handleToKeyboard } = props;
+  
+  const leftUpToCalculator = (keyName) => {
+    handleToKeyboard(keyName);
   }
-
-  handleTextChange(keyName) {
-    const { handleTextChange } = this.props;
-    handleTextChange(keyName);
-  }
-
-  render() {
-    return (
-      <div id="calKeys">
-        <Key handleTextChange={this.handleTextChange} display="AC" />
-        <Key handleTextChange={this.handleTextChange} display="+/-" />
-        <Key handleTextChange={this.handleTextChange} display="%" />
-        <Key handleTextChange={this.handleTextChange} display="÷" op />
-        <Key handleTextChange={this.handleTextChange} display="7" />
-        <Key handleTextChange={this.handleTextChange} display="8" />
-        <Key handleTextChange={this.handleTextChange} display="9" />
-        <Key handleTextChange={this.handleTextChange} display="x" op />
-        <Key handleTextChange={this.handleTextChange} display="4" />
-        <Key handleTextChange={this.handleTextChange} display="5" />
-        <Key handleTextChange={this.handleTextChange} display="6" />
-        <Key handleTextChange={this.handleTextChange} display="-" op />
-        <Key handleTextChange={this.handleTextChange} display="1" />
-        <Key handleTextChange={this.handleTextChange} display="2" />
-        <Key handleTextChange={this.handleTextChange} display="3" />
-        <Key handleTextChange={this.handleTextChange} display="+" op />
-        <Key handleTextChange={this.handleTextChange} display="0" />
-        <Key handleTextChange={this.handleTextChange} display="." />
-        <Key handleTextChange={this.handleTextChange} display="=" op />
-      </div>
-    );
-  }
+  return (
+    <div id="calKeys">
+      <Key handleToKey={leftUpToCalculator} display="AC" />
+      <Key handleToKey={leftUpToCalculator} display="+/-" />
+      <Key handleToKey={leftUpToCalculator} display="%" />
+      <Key handleToKey={leftUpToCalculator} display="÷" op />
+      <Key handleToKey={leftUpToCalculator} display="7" />
+      <Key handleToKey={leftUpToCalculator} display="8" />
+      <Key handleToKey={leftUpToCalculator} display="9" />
+      <Key handleToKey={leftUpToCalculator} display="x" op />
+      <Key handleToKey={leftUpToCalculator} display="4" />
+      <Key handleToKey={leftUpToCalculator} display="5" />
+      <Key handleToKey={leftUpToCalculator} display="6" />
+      <Key handleToKey={leftUpToCalculator} display="-" op />
+      <Key handleToKey={leftUpToCalculator} display="1" />
+      <Key handleToKey={leftUpToCalculator} display="2" />
+      <Key handleToKey={leftUpToCalculator} display="3" />
+      <Key handleToKey={leftUpToCalculator} display="+" op />
+      <Key handleToKey={leftUpToCalculator} display="0" />
+      <Key handleToKey={leftUpToCalculator} display="." />
+      <Key handleToKey={leftUpToCalculator} display="=" op />
+    </div>
+  );
 }
 
 Keyboard.propTypes = {
-  handleTextChange: PropTypes.func.isRequired,
+  handleToKeyboard: PropTypes.func.isRequired,
 };
 
 export default Keyboard;

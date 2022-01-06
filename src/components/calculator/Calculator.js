@@ -8,11 +8,11 @@ import calculate from '../../logic/calculate';
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.handleTextChange = this.handleTextChange.bind(this);
+    this.updateCalculatorState = this.updateCalculatorState.bind(this);
     this.state = { screen: '0' };
   }
 
-  handleTextChange(keyName) {
+  updateCalculatorState(keyName) {
     this.setState((state) => calculate(state, keyName));
   }
 
@@ -21,7 +21,7 @@ class Calculator extends React.Component {
     return (
       <div id="calContainer">
         <Screen screen={screen} />
-        <Keyboard handleTextChange={this.handleTextChange} />
+        <Keyboard handleToKeyboard={this.updateCalculatorState} />
       </div>
     );
   }

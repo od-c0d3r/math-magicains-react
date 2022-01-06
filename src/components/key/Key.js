@@ -6,10 +6,10 @@ import PropTypes from 'prop-types';
 const Key = (props) => {
   const { op } = props;
   const { display } = props;
-  const { handleTextChange } = props;
+  const { handleToKey } = props;
 
   const leftUpState = () => {
-    handleTextChange(display);
+    handleToKey(display);
   };
 
   return (
@@ -21,7 +21,7 @@ const Key = (props) => {
 
 Key.propTypes = {
   op: PropTypes.bool,
-  handleTextChange: PropTypes.func.isRequired,
+  handleToKey: PropTypes.func.isRequired,
   display: PropTypes.string.isRequired,
 };
 
