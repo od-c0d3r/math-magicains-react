@@ -1,4 +1,3 @@
-/* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './Keyboard.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
