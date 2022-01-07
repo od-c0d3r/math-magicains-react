@@ -93,15 +93,17 @@ export default function calculate(obj, buttonName) {
   }
 
   if (!obj.next && obj.total && !obj.operation) {
-    return { ...obj, operation: buttonName, screen: buttonName };
+    return { ...obj, operation: buttonName, screen: obj.screen + ` ` + buttonName };
   }
 
   if (obj.operation) {
     if (obj.total && !obj.next) {
       console.log('op key extra');
+      console.log(obj);
       return { ...obj, operation: buttonName, screen: obj.screen + buttonName };
     }
     const op = operate(obj.total, obj.next, obj.operation);
+    console.log('op true');
     return {
       screen: obj.screen + ` ` + buttonName,
       total: op,
