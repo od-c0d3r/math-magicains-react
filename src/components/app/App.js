@@ -1,4 +1,3 @@
-/* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './App.scss';
 import React from 'react';
 import Calculator from '../calculator/Calculator';
