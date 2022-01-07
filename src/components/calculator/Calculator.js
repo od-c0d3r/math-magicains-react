@@ -1,30 +1,24 @@
 /* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './Calculator.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import Screen from '../screen/Screen';
 import Keyboard from '../keyboard/Keyboard';
 import calculate from '../../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleTextChange = this.handleTextChange.bind(this);
-    this.state = { screen: '0' };
-  }
+const Calculator = () => {
+  const [calculatorData, setData] = useState({ screen: '0' });
+  const { screen } = calculatorData;
 
-  handleTextChange(keyName) {
-    this.setState((state) => calculate(state, keyName));
-  }
+  const updateCalculatorState = (keyName) => {
+    setData((state) => calculate(state, keyName));
+  };
 
-  render() {
-    const { screen } = this.state;
-    return (
-      <div id="calContainer">
-        <Screen screen={screen} />
-        <Keyboard handleTextChange={this.handleTextChange} />
-      </div>
-    );
-  }
-}
+  return (
+    <div id="calContainer">
+      <Screen screen={screen} />
+      <Keyboard handleToKeyboard={updateCalculatorState} />
+    </div>
+  );
+};
 
 export default Calculator;
