@@ -1,4 +1,3 @@
-/* eslint-disable react/prefer-stateless-function, no-useless-constructor */
 import './Calculator.scss';
 import React, { useState } from 'react';
 import Screen from '../screen/Screen';
