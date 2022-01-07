@@ -15,14 +15,16 @@ export default function calculate(obj, buttonName) {
   }
 
   if (isNumber(buttonName)) {
+    console.log('num key');
     if (buttonName === '0' && obj.next === '0') {
-      return {};
+      return { ...obj };
     }
     if (obj.operation) {
       if (obj.next) {
-        return { ...obj, next: obj.next + buttonName, screen: obj.next + buttonName };
+        console.log(obj.screen);
+        return { ...obj, next: obj.next + buttonName, screen: obj.screen + buttonName };
       }
-      return { ...obj, next: buttonName, screen: buttonName };
+      return { ...obj, next: buttonName, screen: obj.screen + ` ` + buttonName };
     }
     if (obj.next) {
       return {
@@ -39,6 +41,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '.') {
+    console.log('. key');
     if (obj.next) {
       if (obj.next.includes('.')) {
         return { ...obj };
@@ -58,6 +61,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '=') {
+    console.log('= key');
     if (obj.next && obj.operation) {
       const op = operate(obj.total, obj.next, obj.operation);
       return {
@@ -67,10 +71,11 @@ export default function calculate(obj, buttonName) {
         operation: null,
       };
     }
-    return {};
+    return { ...obj };
   }
 
   if (buttonName === '+/-') {
+    console.log('+- key');
     if (obj.next) {
       const plusMin = (-1 * parseFloat(obj.next)).toString();
       return { ...obj, next: plusMin, screen: plusMin };
@@ -79,11 +84,12 @@ export default function calculate(obj, buttonName) {
       const plusMin = (-1 * parseFloat(obj.total)).toString();
       return { ...obj, total: plusMin, screen: plusMin };
     }
-    return {};
+    return { ...obj };
   }
 
   if (!obj.next && !obj.total) {
-    return {};
+    console.log('no op');
+    return { ...obj };
   }
 
   if (!obj.next && obj.total && !obj.operation) {
@@ -92,11 +98,12 @@ export default function calculate(obj, buttonName) {
 
   if (obj.operation) {
     if (obj.total && !obj.next) {
-      return { ...obj, operation: buttonName, screen: buttonName };
+      console.log('op key extra');
+      return { ...obj, operation: buttonName, screen: obj.screen + buttonName };
     }
     const op = operate(obj.total, obj.next, obj.operation);
     return {
-      screen: op,
+      screen: obj.screen + ` ` + buttonName,
       total: op,
       next: null,
       operation: buttonName,
@@ -107,8 +114,9 @@ export default function calculate(obj, buttonName) {
     return { operation: buttonName, screen: buttonName };
   }
 
+  console.log('op key');
   return {
-    screen: buttonName,
+    screen: obj.screen + ` ` + buttonName,
     total: obj.next,
     next: null,
     operation: buttonName,
