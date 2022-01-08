@@ -127,4 +127,7 @@ This project is [MIT](./MIT.md) licensed.
 
 ## Todo
 
-- [ ]
+- [x] First implementation design
+- [x] Display calculation process progress
+- [ ] Seperate total from the operation display on seperate line
+- [ ] Improve desgin  
