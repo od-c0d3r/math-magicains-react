@@ -119,6 +119,10 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgemnt
+
+- Calculator design by [Özge Oldaç](https://dribbble.com/shots/6805175-Daily-UI-004-Calculator/attachments/6805175-Daily-UI-004-Calculator?mode=media)
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

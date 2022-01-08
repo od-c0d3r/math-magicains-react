@@ -24,7 +24,7 @@ export default function calculate(obj, buttonName) {
         console.log(obj.screen);
         return { ...obj, next: obj.next + buttonName, screen: obj.screen + buttonName };
       }
-      return { ...obj, next: buttonName, screen: obj.screen + ` ` + buttonName };
+      return { ...obj, next: buttonName, screen: `${obj.screen} ${buttonName}` };
     }
     if (obj.next) {
       return {
@@ -93,7 +93,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (!obj.next && obj.total && !obj.operation) {
-    return { ...obj, operation: buttonName, screen: obj.screen + ` ` + buttonName };
+    return { ...obj, operation: buttonName, screen: `${obj.screen} ${buttonName}` };
   }
 
   if (obj.operation) {
@@ -105,7 +105,7 @@ export default function calculate(obj, buttonName) {
     const op = operate(obj.total, obj.next, obj.operation);
     console.log('op true');
     return {
-      screen: obj.screen + ` ` + buttonName,
+      screen: `${obj.screen} ${buttonName}`,
       total: op,
       next: null,
       operation: buttonName,
@@ -118,7 +118,7 @@ export default function calculate(obj, buttonName) {
 
   console.log('op key');
   return {
-    screen: obj.screen + ` ` + buttonName,
+    screen: `${obj.screen} ${buttonName}`,
     total: obj.next,
     next: null,
     operation: buttonName,
