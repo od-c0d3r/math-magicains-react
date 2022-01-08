@@ -8,7 +8,7 @@
 
 > Milestone 3 : Import and merge the logic needed to make the Calculator components developed in the previous milestone work.
 
-> Milestone 4 : Refactor the Calculator components, Instead of using class based components, will use hooks.
+> Milestone 4 : Refactor the Calculator components, to use hooks instead of using class based components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
@@ -130,4 +130,4 @@ This project is [MIT](./MIT.md) licensed.
 - [x] First implementation design
 - [x] Display calculation process progress
 - [ ] Seperate total from the operation display on seperate line
-- [ ] Improve desgin  
+- [x] Improve desgin  
