@@ -13,8 +13,20 @@ const Key = (props) => {
     handleToKey(display);
   };
 
+  const whichKey = () => {
+    if (op) {
+      return 'calKey opColor';
+    } else if (ac) {
+      return 'calKey acKey';
+    } else if (eq) {
+      return 'calKey eqKey';
+    } else {
+      return 'calKey';
+    }
+  }
+
   return (
-    <button type="button" className={op ? 'calKey opColor' : ac ? 'calKey acKey' : eq ? 'calKey eqKey' : 'calKey'} onClick={leftUpState} onKeyPress={leftUpState}>
+    <button type="button" className={whichKey()} onClick={leftUpState} onKeyPress={leftUpState}>
       {display}
     </button>
   );
