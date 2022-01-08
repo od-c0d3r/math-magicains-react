@@ -1,5 +1,7 @@
 # Math Magicians App
 
+<img align="right" src="./public/react.svg" style="width:400px;">
+
 > Milestone 1 : Set up the environment and tools needed to develop a React application
 
 > Milestone 2 : Develop React components that will hold the core functionality: a calculator.
@@ -8,21 +10,8 @@
 
 > Milestone 4 : Refactor the Calculator components, Instead of using class based components, will use hooks.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-<div style="float:right;">
-
-<img align="right" src="./public/react.svg" style="width:450px;">
-
-</div> 
-
-<br>
-
-<div style="float:right; width:200px;">
-
-<img align="right" src="./public/screen_shot.jpeg" style="width:450px;">
-
-</div>
 
 ## Built With
 
@@ -33,6 +22,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Served with Github pages : [Live](https://od-c0d3r.github.io/math-magicains-react/)
 
 ## App Tree
+
+<img align="right" src="./public/screen_shot.jpeg" width="350px">
 
 ```markdown
 .
@@ -133,3 +124,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## Todo
+
+- [ ]
