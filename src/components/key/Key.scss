@@ -1,10 +1,15 @@
 .calKey {
-  background-color: #dfdfdf;
-  border: 1px solid #cacaca;
-  padding: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
   text-align: center;
+  background-color: #2F2A3A;
+  
+  color: whitesmoke;
+  border: 0;
+  font-size: large;
 }
 
 .opColor {
-  background-color: #ff8a3d;
+  // background-color: #ff8a3d;
 }

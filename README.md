@@ -12,8 +12,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <div style="float:right;">
 
-
 <img align="right" src="./public/react.svg" style="width:450px;">
+
+</div> 
+
+<br>
+
+<div style="float:right; width:200px;">
+
+<img align="right" src="./public/screen_shot.jpeg" style="width:450px;">
 
 </div>
 

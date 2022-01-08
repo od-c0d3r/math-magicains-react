@@ -1,4 +1,5 @@
 import './App.scss';
+import 'normalize.css';
 import React from 'react';
 import Calculator from '../calculator/Calculator';
 
