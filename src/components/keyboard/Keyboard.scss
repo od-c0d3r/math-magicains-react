@@ -1,12 +1,18 @@
 #calKeys {
+  padding: 20px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   font-size: x-small;
+  gap: 20px;
   background-color: #2f2a3a;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   :nth-child(17) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
+  }
+  :nth-child(19) {
+    grid-column-start: 4;
+    grid-column-end: 5;
   }
 }

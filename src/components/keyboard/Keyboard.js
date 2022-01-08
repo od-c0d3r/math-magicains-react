@@ -10,7 +10,7 @@ const Keyboard = (props) => {
   };
   return (
     <div id="calKeys">
-      <Key handleToKey={leftUpToCalculator} display="AC" />
+      <Key handleToKey={leftUpToCalculator} display="AC" ac />
       <Key handleToKey={leftUpToCalculator} display="+/-" />
       <Key handleToKey={leftUpToCalculator} display="%" />
       <Key handleToKey={leftUpToCalculator} display="÷" op />
@@ -28,7 +28,7 @@ const Keyboard = (props) => {
       <Key handleToKey={leftUpToCalculator} display="+" op />
       <Key handleToKey={leftUpToCalculator} display="0" />
       <Key handleToKey={leftUpToCalculator} display="." />
-      <Key handleToKey={leftUpToCalculator} display="=" op />
+      <Key handleToKey={leftUpToCalculator} display="=" eq />
     </div>
   );
 };
