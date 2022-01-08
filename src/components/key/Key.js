@@ -16,14 +16,15 @@ const Key = (props) => {
   const whichKey = () => {
     if (op) {
       return 'calKey opColor';
-    } else if (ac) {
-      return 'calKey acKey';
-    } else if (eq) {
-      return 'calKey eqKey';
-    } else {
-      return 'calKey';
     }
-  }
+    if (ac) {
+      return 'calKey acKey';
+    }
+    if (eq) {
+      return 'calKey eqKey';
+    }
+    return 'calKey';
+  };
 
   return (
     <button type="button" className={whichKey()} onClick={leftUpState} onKeyPress={leftUpState}>
