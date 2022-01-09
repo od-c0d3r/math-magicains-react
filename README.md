@@ -23,7 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## App Tree
 
-<img align="right" src="./public/screen_shot.jpeg" width="350px">
+<img align="right" src="./public/screen_shot.gif" width="350px">
 
 ```markdown
 .

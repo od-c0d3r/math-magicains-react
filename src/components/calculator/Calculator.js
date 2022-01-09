@@ -5,6 +5,7 @@ import Keyboard from '../keyboard/Keyboard';
 import calculate from '../../logic/calculate';
 
 const Calculator = () => {
+  const keyNums = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   const [calculatorData, setData] = useState({ screen: '0' });
   const { screen } = calculatorData;
 
@@ -15,7 +16,7 @@ const Calculator = () => {
   return (
     <div id="calContainer">
       <Screen screen={screen} />
-      <Keyboard handleToKeyboard={updateCalculatorState} />
+      <Keyboard keyNums={keyNums} handleToKeyboard={updateCalculatorState} />
     </div>
   );
 };

@@ -5,36 +5,26 @@ import Key from '../key/Key';
 
 const Keyboard = (props) => {
   const { handleToKeyboard } = props;
+  const { keyNums } = props;
   const leftUpToCalculator = (keyName) => {
     handleToKeyboard(keyName);
   };
+  const keysMap = keyNums.map((ele) => {
+    if (ele === '=') return <Key key={ele} display={ele} handleToKey={leftUpToCalculator} eq />;
+    if (ele === 'AC') return <Key key={ele} display={ele} handleToKey={leftUpToCalculator} ac />;
+    if (ele.match(/^÷$|^x$|^-$|^\+$/)) return <Key key={ele} display={ele} handleToKey={leftUpToCalculator} op />;
+    return <Key key={ele} display={ele} handleToKey={leftUpToCalculator} />;
+  });
   return (
     <div id="calKeys">
-      <Key handleToKey={leftUpToCalculator} display="AC" ac />
-      <Key handleToKey={leftUpToCalculator} display="+/-" />
-      <Key handleToKey={leftUpToCalculator} display="%" />
-      <Key handleToKey={leftUpToCalculator} display="÷" op />
-      <Key handleToKey={leftUpToCalculator} display="7" />
-      <Key handleToKey={leftUpToCalculator} display="8" />
-      <Key handleToKey={leftUpToCalculator} display="9" />
-      <Key handleToKey={leftUpToCalculator} display="x" op />
-      <Key handleToKey={leftUpToCalculator} display="4" />
-      <Key handleToKey={leftUpToCalculator} display="5" />
-      <Key handleToKey={leftUpToCalculator} display="6" />
-      <Key handleToKey={leftUpToCalculator} display="-" op />
-      <Key handleToKey={leftUpToCalculator} display="1" />
-      <Key handleToKey={leftUpToCalculator} display="2" />
-      <Key handleToKey={leftUpToCalculator} display="3" />
-      <Key handleToKey={leftUpToCalculator} display="+" op />
-      <Key handleToKey={leftUpToCalculator} display="0" />
-      <Key handleToKey={leftUpToCalculator} display="." />
-      <Key handleToKey={leftUpToCalculator} display="=" eq />
+      {keysMap}
     </div>
   );
 };
 
 Keyboard.propTypes = {
   handleToKeyboard: PropTypes.func.isRequired,
+  keyNums: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Keyboard;
