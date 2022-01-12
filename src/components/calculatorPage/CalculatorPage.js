@@ -1,4 +1,4 @@
-import './calculatorPage.scss';
+import './CalculatorPage.scss';
 import Calculator from '../calculator/Calculator';
 import CalContent from '../calContent/calContent';
 

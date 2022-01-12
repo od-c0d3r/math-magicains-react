@@ -1,19 +1,20 @@
 import './App.scss';
 import 'normalize.css';
 import React from 'react';
-import { Route, Router, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Header from '../header/Header';
-import CalculatorPage from '../calculatorPage/calculatorPage';
+import CalculatorPage from '../calculatorPage/CalculatorPage';
+import HomePage from '../homePage/HomePage';
+import QuotePage from '../quotePage/QuotePage';
 
 const App = () => (
   <div id="App" style={{ height: window.innerHeight }}>
     <Header />
-    <Router className="App-intro">
-      <Route path="/home" exact component={HomePage} />
-      <Route path="/calc" component={CalculatorPage} />
-      <Route path="/quote" component={QuotePage} />
-      <Navigate to="/home" />
-    </Router>
+    <Routes>
+      <Route path="home" element={<HomePage />} />
+      <Route path="calc" element={<CalculatorPage />} />
+      <Route path="quote" element={<QuotePage />} />
+    </Routes>
   </div>
 );
 
