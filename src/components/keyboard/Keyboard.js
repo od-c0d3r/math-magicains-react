@@ -9,6 +9,7 @@ const Keyboard = (props) => {
   const leftUpToCalculator = (keyName) => {
     handleToKeyboard(keyName);
   };
+
   const keysMap = keyNums.map((ele) => {
     if (ele === '=') return <Key key={ele} display={ele} handleToKey={leftUpToCalculator} eq />;
     if (ele === 'AC') return <Key key={ele} display={ele} handleToKey={leftUpToCalculator} ac />;
