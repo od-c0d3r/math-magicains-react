@@ -1,11 +1,12 @@
 import './App.scss';
 import 'normalize.css';
 import React from 'react';
-import Calculator from '../calculator/Calculator';
+import CalculatorPage from '../calculatorPage/calculatorPage';
+
 
 const App = () => (
   <div id="App" style={{ height: window.innerHeight }}>
-    <Calculator />
+    <CalculatorPage />
   </div>
 );
 
