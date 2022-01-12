@@ -2,7 +2,7 @@
 
 <img align="right" src="./public/react.svg" style="width:400px;">
 
-> Milestone 1 : Set up the environment and tools needed to develop a React application
+> Milestone 1 : Set up the environment and tools needed to develop a React application.
 
 > Milestone 2 : Develop React components that will hold the core functionality: a calculator.
 
@@ -10,12 +10,13 @@
 
 > Milestone 4 : Refactor the Calculator components, to use hooks instead of using class based components.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+> Milestone 5 : Full website for the Math magicians app, consisting of several pages and using the components already created.
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 ## Built With
 
-- JavaScript framework : ReactJs
+- JavaScript library : ReactJs
 
 ## Live Demo
 
@@ -40,20 +41,39 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 │   │   ├── app
 │   │   │   ├── App.js
 │   │   │   └── App.scss
+│   │   ├── calContent
+│   │   │   ├── calContent.js
+│   │   │   └── calContent.scss
 │   │   ├── calculator
 │   │   │   ├── Calculator.js
 │   │   │   └── Calculator.scss
+│   │   ├── calculatorPage
+│   │   │   ├── CalculatorPage.js
+│   │   │   └── CalculatorPage.scss
+│   │   ├── header
+│   │   │   ├── Header.js
+│   │   │   └── Header.scss
+│   │   ├── homePage
+│   │   │   ├── HomePage.js
+│   │   │   └── HomePage.scss
 │   │   ├── key
 │   │   │   ├── Key.js
 │   │   │   └── Key.scss
 │   │   ├── keyboard
 │   │   │   ├── Keyboard.js
 │   │   │   └── Keyboard.scss
+│   │   ├── navbar
+│   │   │   ├── Navbar.js
+│   │   │   └── Navbar.scss
+│   │   ├── quotePage
+│   │   │   ├── QuotePage.js
+│   │   │   └── QuotePage.scss
 │   │   └── screen
 │   │       ├── Screen.js
 │   │       └── Screen.scss
 │   ├── logic
 │   │   ├── calculate.js
+│   │   ├── dark.js
 │   │   └── operate.js
 │   ├── index.js
 │   └── index.scss
@@ -129,5 +149,6 @@ This project is [MIT](./MIT.md) licensed.
 
 - [x] First implementation design
 - [x] Display calculation process progress
+- [x] Improve calculator desgin
 - [ ] Seperate total from the operation display on seperate line
-- [x] Improve desgin  
+- [ ] Improve pages design
