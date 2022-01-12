@@ -11,6 +11,8 @@ const App = () => (
   <div id="App" style={{ height: window.innerHeight }}>
     <Header />
     <Routes>
+      <Route path="math-magicains-react" element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="home" element={<HomePage />} />
       <Route path="calc" element={<CalculatorPage />} />
       <Route path="quote" element={<QuotePage />} />

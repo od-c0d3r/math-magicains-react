@@ -15,13 +15,11 @@ export default function calculate(obj, buttonName) {
   }
 
   if (isNumber(buttonName)) {
-    console.log('num key');
     if (buttonName === '0' && obj.next === '0') {
       return { ...obj };
     }
     if (obj.operation) {
       if (obj.next) {
-        console.log(obj.screen);
         return { ...obj, next: obj.next + buttonName, screen: obj.screen + buttonName };
       }
       return { ...obj, next: buttonName, screen: `${obj.screen} ${buttonName}` };
@@ -41,7 +39,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '.') {
-    console.log('. key');
     if (obj.next) {
       if (obj.next.includes('.')) {
         return { ...obj };
@@ -61,7 +58,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '=') {
-    console.log('= key');
     if (obj.next && obj.operation) {
       const op = operate(obj.total, obj.next, obj.operation);
       return {
@@ -75,7 +71,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '+/-') {
-    console.log('+- key');
     if (obj.next) {
       const plusMin = (-1 * parseFloat(obj.next)).toString();
       return { ...obj, next: plusMin, screen: plusMin };
@@ -88,7 +83,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (!obj.next && !obj.total) {
-    console.log('no op');
     return { ...obj };
   }
 
@@ -98,12 +92,9 @@ export default function calculate(obj, buttonName) {
 
   if (obj.operation) {
     if (obj.total && !obj.next) {
-      console.log('op key extra');
-      console.log(obj);
       return { ...obj, operation: buttonName, screen: obj.screen + buttonName };
     }
     const op = operate(obj.total, obj.next, obj.operation);
-    console.log('op true');
     return {
       screen: `${obj.screen} ${buttonName}`,
       total: op,
@@ -116,7 +107,6 @@ export default function calculate(obj, buttonName) {
     return { operation: buttonName, screen: buttonName };
   }
 
-  console.log('op key');
   return {
     screen: `${obj.screen} ${buttonName}`,
     total: obj.next,
