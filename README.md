@@ -100,6 +100,9 @@ To get a local copy up and running follow these simple example steps
 
 In the project directory, you can run:
 
+- #### `npm install`
+  - Install the project dependencies.
+
 - #### `npm start`
 
   - Runs the app in the development mode.\
