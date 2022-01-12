@@ -16,10 +16,24 @@ describe('Unit testing operate()', ()=>{
         expect(result).toBe('0');
     });
 
-    test('test mutliplication operation', ()=>{
+    test('test multiplication operation', ()=>{
         let result = operate(num1, num2,'x');
 
         expect(result).toBe('25');
     });
+
+    test('test division operation', ()=>{
+        let result = operate(num1, num2,'÷');
+
+        expect(result).toBe('1');
+    });
+
+    test('test modulo operation', ()=>{
+        let result = operate(num1, num2,'%');
+
+        expect(result).toBe('0');
+    });
+
+    
 
 });
