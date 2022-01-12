@@ -1,0 +1,23 @@
+#navbar {
+  // background-color: red;
+  ul {
+    font-family: "Gideon Roman", cursive;
+    font-size: large;
+    color: black;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .active {
+      color: #7c5efe;
+    }
+  }
+}
