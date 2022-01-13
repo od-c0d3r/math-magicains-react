@@ -2,7 +2,7 @@ import TestRenderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import App from '../components/app/App';
 import HomePage from '../components/homePage/HomePage';
-import CalculatorPage from '../components/calculatorPage/CalculatorPage'
+import CalculatorPage from '../components/calculatorPage/CalculatorPage';
 import QuotePage from '../components/quotePage/QuotePage';
 import CalContent from '../components/calContent/calContent';
 import Header from '../components/header/Header.js';
@@ -24,11 +24,11 @@ describe('Components Snapshots', () => {
   test('renders correctly Keyboard', () => {
     const keyNums = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
 
-    const tree = TestRenderer.create(<BrowserRouter><Keyboard keyNums={keyNums}/></BrowserRouter>).toJSON();
+    const tree = TestRenderer.create(<BrowserRouter><Keyboard keyNums={keyNums} /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
   test('renders correctly Screen', () => {
-    const tree = TestRenderer.create(<BrowserRouter><Screen screen={'0'}/></BrowserRouter>).toJSON();
+    const tree = TestRenderer.create(<BrowserRouter><Screen screen="0" /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
   test('renders correctly Key', () => {

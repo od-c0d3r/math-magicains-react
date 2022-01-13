@@ -27,7 +27,7 @@ exports[`Components Snapshots renders correctly App 1`] = `
       <ul>
         <li>
           <a
-            activeClassName="active"
+            activeclassname="active"
             className=""
             href="/home"
             onClick={[Function]}
@@ -37,7 +37,7 @@ exports[`Components Snapshots renders correctly App 1`] = `
         </li>
         <li>
           <a
-            activeClassName="active"
+            activeclassname="active"
             className=""
             href="/calc"
             onClick={[Function]}
@@ -47,7 +47,7 @@ exports[`Components Snapshots renders correctly App 1`] = `
         </li>
         <li>
           <a
-            activeClassName="active"
+            activeclassname="active"
             className=""
             href="/quote"
             onClick={[Function]}
@@ -332,7 +332,7 @@ exports[`Components Snapshots renders correctly Header 1`] = `
     <ul>
       <li>
         <a
-          activeClassName="active"
+          activeclassname="active"
           className=""
           href="/home"
           onClick={[Function]}
@@ -342,7 +342,7 @@ exports[`Components Snapshots renders correctly Header 1`] = `
       </li>
       <li>
         <a
-          activeClassName="active"
+          activeclassname="active"
           className=""
           href="/calc"
           onClick={[Function]}
@@ -352,7 +352,7 @@ exports[`Components Snapshots renders correctly Header 1`] = `
       </li>
       <li>
         <a
-          activeClassName="active"
+          activeclassname="active"
           className=""
           href="/quote"
           onClick={[Function]}
@@ -612,7 +612,7 @@ exports[`Components Snapshots renders correctly Navbar 1`] = `
   <ul>
     <li>
       <a
-        activeClassName="active"
+        activeclassname="active"
         className=""
         href="/home"
         onClick={[Function]}
@@ -622,7 +622,7 @@ exports[`Components Snapshots renders correctly Navbar 1`] = `
     </li>
     <li>
       <a
-        activeClassName="active"
+        activeclassname="active"
         className=""
         href="/calc"
         onClick={[Function]}
@@ -632,7 +632,7 @@ exports[`Components Snapshots renders correctly Navbar 1`] = `
     </li>
     <li>
       <a
-        activeClassName="active"
+        activeclassname="active"
         className=""
         href="/quote"
         onClick={[Function]}
