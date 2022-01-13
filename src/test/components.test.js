@@ -22,11 +22,13 @@ describe('Components Snapshots', () => {
     expect(tree).toMatchSnapshot();
   });
   test('renders correctly Keyboard', () => {
-    const tree = TestRenderer.create(<BrowserRouter><Calculator><Keyboard /></Calculator></BrowserRouter>).toJSON();
+    const keyNums = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+
+    const tree = TestRenderer.create(<BrowserRouter><Keyboard keyNums={keyNums}/></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
   test('renders correctly Screen', () => {
-    const tree = TestRenderer.create(<BrowserRouter><Screen /></BrowserRouter>).toJSON();
+    const tree = TestRenderer.create(<BrowserRouter><Screen screen={'0'}/></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
   test('renders correctly Key', () => {

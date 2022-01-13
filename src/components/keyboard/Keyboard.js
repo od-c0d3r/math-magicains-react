@@ -23,9 +23,15 @@ const Keyboard = (props) => {
   );
 };
 
+const handleToKeyboardDefault = () => 'Default handleToKeyboard';
+
 Keyboard.propTypes = {
-  handleToKeyboard: PropTypes.func.isRequired,
+  handleToKeyboard: PropTypes.func,
   keyNums: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+Keyboard.defaultProps = {
+  handleToKeyboard: handleToKeyboardDefault,
 };
 
 export default Keyboard;

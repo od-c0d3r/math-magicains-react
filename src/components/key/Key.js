@@ -33,18 +33,22 @@ const Key = (props) => {
   );
 };
 
+const handleToKeyDefault = () => 'Default handleToKey';
+
 Key.propTypes = {
   op: PropTypes.bool,
   ac: PropTypes.bool,
   eq: PropTypes.bool,
-  handleToKey: PropTypes.func.isRequired,
-  display: PropTypes.string.isRequired,
+  handleToKey: PropTypes.func,
+  display: PropTypes.string,
 };
 
 Key.defaultProps = {
   op: false,
   ac: false,
   eq: false,
+  handleToKey: handleToKeyDefault,
+  display: '0',
 };
 
 export default Key;
