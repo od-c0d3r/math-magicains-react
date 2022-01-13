@@ -12,6 +12,8 @@
 
 > Milestone 5 : Full website for the Math magicians app, consisting of several pages and using the components already created.
 
+> Milestone 6 : Write unit tests, React components snapshots, intergration tests using the Jest and React Testing Library libraries
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 ## Built With
@@ -75,17 +77,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 │   │   ├── calculate.js
 │   │   ├── dark.js
 │   │   └── operate.js
+│   ├── test
+│   │   ├── __snapshots__
+│   │   │   └── components.test.js.snap
+│   │   ├── logic
+│   │   │   ├── calculate.test.js
+│   │   │   └── operate.test.js
+│   │   ├── components.test.js
+│   │   └── interactions.test.js
 │   ├── index.js
 │   └── index.scss
-├── .babelrc
-├── .env
-├── .eslintrc.json
-├── .gitignore
-├── .stylelintrc.json
-├── LICENSE
-├── package-lock.json
-├── package.json
-└── README.md
 ```
 
 ## Getting Started
@@ -99,6 +100,10 @@ To get a local copy up and running follow these simple example steps
 ### Available Scripts
 
 In the project directory, you can run:
+
+- #### `npm install`
+
+  - Install the project dependencies.
 
 - #### `npm start`
 
