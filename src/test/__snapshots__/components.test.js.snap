@@ -136,6 +136,174 @@ exports[`Components Snapshots renders correctly CalContent 1`] = `
 </div>
 `;
 
+exports[`Components Snapshots renders correctly Calculator 1`] = `
+<div
+  id="calContainer"
+>
+  <div
+    id="calScreen"
+  >
+    0
+  </div>
+  <div
+    id="calKeys"
+  >
+    <button
+      className="calKey acKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="calKey opColor"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="calKey opColor"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="calKey opColor"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="calKey opColor"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="calKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="calKey eqKey"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Components Snapshots renders correctly CalculatorPage 1`] = `
 <div
   id="calPage"

@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { createMemoryHistory } from 'history';
-import { BrowserRouter, NavLink } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from '../components/app/App';
 
 test('Full app rendering/navigating pages', () => {

@@ -5,10 +5,10 @@ import HomePage from '../components/homePage/HomePage';
 import CalculatorPage from '../components/calculatorPage/CalculatorPage';
 import QuotePage from '../components/quotePage/QuotePage';
 import CalContent from '../components/calContent/calContent';
-import Header from '../components/header/Header.js';
-import Navbar from '../components/navbar/Navbar.js';
+import Header from '../components/header/Header';
+import Navbar from '../components/navbar/Navbar';
 import Keyboard from '../components/keyboard/Keyboard';
-import Screen from '../components/screen/Screen.js';
+import Screen from '../components/screen/Screen';
 import Key from '../components/key/Key';
 import Calculator from '../components/calculator/Calculator';
 
@@ -24,7 +24,11 @@ describe('Components Snapshots', () => {
   test('renders correctly Keyboard', () => {
     const keyNums = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
 
-    const tree = TestRenderer.create(<BrowserRouter><Keyboard keyNums={keyNums} /></BrowserRouter>).toJSON();
+    const tree = TestRenderer.create(
+      <BrowserRouter>
+        <Keyboard keyNums={keyNums} />
+      </BrowserRouter>,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
   test('renders correctly Screen', () => {
@@ -39,7 +43,10 @@ describe('Components Snapshots', () => {
     const tree = TestRenderer.create(<CalContent />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-
+  test('renders correctly Calculator', () => {
+    const tree = TestRenderer.create(<Calculator />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   test('renders correctly Header', () => {
     const tree = TestRenderer.create(<BrowserRouter><Header /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
