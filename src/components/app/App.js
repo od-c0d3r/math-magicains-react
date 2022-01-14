@@ -12,6 +12,7 @@ const App = () => (
     <Header />
     <Routes>
       <Route path="math-magicains-react" element={<HomePage />} />
+      <Route element={<HomePage />} />
       <Route path="/" element={<HomePage />} />
       <Route path="home" element={<HomePage />} />
       <Route path="calc" element={<CalculatorPage />} />
