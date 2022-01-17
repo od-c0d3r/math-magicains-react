@@ -14,6 +14,8 @@
 
 > Milestone 6 (Pair-programming with  [@Debas-31](https://github.com/Debas-31)) : Write unit tests, React components snapshots, intergration tests using the Jest and React Testing Library libraries
 
+> Milestone 7 : Deploy to different host services like Heroku and Netlify
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 ## Built With
@@ -21,6 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - JavaScript library : ReactJs
 
 ## Live Demo
+
 - Served with Heroku : [Live](https://math-magicains-react.herokuapp.com/)
 - Served with Netlify pages : [Live](https://61e54ce3d5eabe23bd996a96--reverent-leavitt-a3ab4f.netlify.app/)
 - Served with Github pages : [Live](https://od-c0d3r.github.io/math-magicains-react/)
