@@ -22,6 +22,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
+- Served with Heroku : [Live](https://math-magicains-react.herokuapp.com/)
 - Served with Github pages : [Live](https://od-c0d3r.github.io/math-magicains-react/)
 
 ## App Tree
