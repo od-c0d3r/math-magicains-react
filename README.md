@@ -12,7 +12,7 @@
 
 > Milestone 5 : Full website for the Math magicians app, consisting of several pages and using the components already created.
 
-> Milestone 6 : Write unit tests, React components snapshots, intergration tests using the Jest and React Testing Library libraries
+> Milestone 6 (Pair-programming with  [@Debas-31](https://github.com/Debas-31)) : Write unit tests, React components snapshots, intergration tests using the Jest and React Testing Library libraries
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
